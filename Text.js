@@ -14,35 +14,33 @@ async function checkWeather(city) {
         document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+ "°C"
         document.querySelector(".humidity").innerHTML= data.main.humidity+ "%"
         document.querySelector(".wind").innerHTML= data.wind.speed+ " km/h"
-    if (data.weather[0].main=="cloudy"){
+    if (data.weather[0].main=="Clouds"){
             weatherIcon.src="cloudy.png"
     }
-    else if (data.weather[0].main=="Misty"){
-             weatherIcon.src="mist.png"
+    else if (data.weather[0].main=="Mist"){
+            weatherIcon.src="mist.png"
         }
     else if (data.weather[0].main=="Clear"){
-             weatherIcon.src="clear.png"
+            weatherIcon.src="clear.png"
         }
-    else if (data.weather[0].main=="Snow"){
-             weatherIcon.src="snow.png"
-        }
-    else if (data.weather[0].main=="Rainy"){
-             weatherIcon.src="Rainy.png"
+    else if (data.weather[0].main=="Rain"){
+            weatherIcon.src="Rain.png"
         }
     else if (data.weather[0].main=="Drizzle"){
-             weatherIcon.src="drizzle.png"
+            weatherIcon.src="drizzle.png"
         }
 
 
        
-        document.querySelector(".error").style.display = "none";
+       
         document.querySelector(".weather").style.display ="block"
+        document.querySelector(".error").style.display = "none";
         
 }
 }
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
   });
-  document.addEventListener("DOMContentLoaded", () => {
-    checkWeather("Mumbai");
+document.addEventListener("DOMContentLoaded", () => {
+    checkWeather("Nairobi");
   });

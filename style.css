@@ -10,8 +10,10 @@ body{
 }
 .card{
     width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #f2ff00dd, #5b548a);
+    width: 470px;
+    background:url(download.jpg);
+    background-position: center;
+    background-size:cover ;
     color:#fff;
     margin:100px auto 0;
     border-radius: 20px;
@@ -88,4 +90,11 @@ body{
 }
 .weather{
     display: none;
+}
+@media(max-width:500px){
+    .card{width:380px; height: 570px;}
+    .search input{font-size: 14px;}
+    .weather h1{font-size: 40px;}
+    .humidity, .wind {font-size:20px;}
+
 }
