@@ -100,11 +100,11 @@ body{
     min-height: 100dvh;
     box-sizing: border-box;}
     .search input{height:40px; font-size: 14px;}
-    #search-btn{
-        border-radius: 50%;
-        width: 45px;
-        height: 45px;
-    }
+    #search-btn img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
     .weather h1{font-size: 40px;}
     .humidity, .wind {font-size:20px;}
 
