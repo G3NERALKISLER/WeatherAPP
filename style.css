@@ -13,13 +13,12 @@ body{
 }
 .card{
     height:fit-content;
-    width: 1200px;
+    height: 100vh;
+    width: 100%;
     background:url(download.jpg);
     background-position: center;
     background-size:cover ;
     color:#fff;
-    margin-top:20px;
-    border-radius: 20px;
     padding:40px 35px;
     text-align: center;
 }
@@ -39,19 +38,19 @@ body{
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
-}
-.search img{
-    border-radius: 50%;
+    font-size: 24px;
 }
 .search button{
+    background: none;
     border:0;
     outline:0;
-    background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
     cursor: pointer;
+}
+#search-btn img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 .error{
     margin: 10px 20px;
@@ -100,7 +99,7 @@ body{
     max-width: 100%;
     min-height: 100dvh;
     box-sizing: border-box;}
-    .search input{font-size: 14px;}
+    .search input{height:40px; font-size: 14px;}
     #search-btn{
         border-radius: 50%;
         width: 45px;
